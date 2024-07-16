@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EBB8E3B-1E56-4C37-8AA1-EA402C003976}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AydınDinlenmeTesisleri</RootNamespace>
+    <AssemblyName>AydınDinlenmeTesisleri</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AydınDinlenmeTesisleriDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AydınDinlenmeTesisleriDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AydınDinlenmeTesisleriDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AydınDinlenmeTesisleriDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGelirGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGelirGider.Designer.cs">
+      <DependentUpon>FrmGelirGider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMüsteriBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMüsteriBilgileri.Designer.cs">
+      <DependentUpon>FrmMüsteriBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminGiris.Designer.cs">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gazeteler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gazeteler.Designer.cs">
+      <DependentUpon>Gazeteler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesajlar.Designer.cs">
+      <DependentUpon>Mesajlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odalar.Designer.cs">
+      <DependentUpon>Odalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhoneBook.Designer.cs">
+      <DependentUpon>PhoneBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadyoDinle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadyoDinle.Designer.cs">
+      <DependentUpon>RadyoDinle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stoklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stoklar.Designer.cs">
+      <DependentUpon>Stoklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SıfreGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SıfreGuncelle.Designer.cs">
+      <DependentUpon>SıfreGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniMüşteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniMüşteriEkle.Designer.cs">
+      <DependentUpon>YeniMüşteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Şehirler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Şehirler.Designer.cs">
+      <DependentUpon>Şehirler.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGelirGider.resx">
+      <DependentUpon>FrmGelirGider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMüsteriBilgileri.resx">
+      <DependentUpon>FrmMüsteriBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminGiris.resx">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gazeteler.resx">
+      <DependentUpon>Gazeteler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesajlar.resx">
+      <DependentUpon>Mesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odalar.resx">
+      <DependentUpon>Odalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhoneBook.resx">
+      <DependentUpon>PhoneBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RadyoDinle.resx">
+      <DependentUpon>RadyoDinle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stoklar.resx">
+      <DependentUpon>Stoklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SıfreGuncelle.resx">
+      <DependentUpon>SıfreGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniMüşteriEkle.resx">
+      <DependentUpon>YeniMüşteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Şehirler.resx">
+      <DependentUpon>Şehirler.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AydınDinlenmeTesisleriDataSet.xsc">
+      <DependentUpon>AydınDinlenmeTesisleriDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AydınDinlenmeTesisleriDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AydınDinlenmeTesisleriDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AydınDinlenmeTesisleriDataSet.xss">
+      <DependentUpon>AydınDinlenmeTesisleriDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AydınDinlenmeTesisleriDataSet1.xsc">
+      <DependentUpon>AydınDinlenmeTesisleriDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AydınDinlenmeTesisleriDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AydınDinlenmeTesisleriDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AydınDinlenmeTesisleriDataSet1.xss">
+      <DependentUpon>AydınDinlenmeTesisleriDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
